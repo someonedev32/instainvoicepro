@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InstaInvoice Pro — Terms of Service</title>
+  <meta name="description" content="Terms of Service for InstalInvoice Pro, including subscription pricing, free trial, renewal, cancellation, and refund information." />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#0f1733;
+      --text:#e9ecf5;
+      --muted:#b7bfdc;
+      --line:rgba(255,255,255,.10);
+      --accent:#7aa2ff;
+      --good:#41d39e;
+      --warn:#ffcc66;
+      --bad:#ff6b6b;
+      --shadow:0 18px 50px rgba(0,0,0,.35);
+      --radius:18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1200px 900px at 20% -10%, rgba(122,162,255,.25), transparent 55%),
+                  radial-gradient(900px 700px at 90% 10%, rgba(65,211,158,.14), transparent 60%),
+                  linear-gradient(180deg, var(--bg), #070a14 70%);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      padding:42px 20px 18px;
+      border-bottom:1px solid var(--line);
+      background: rgba(0,0,0,.12);
+      backdrop-filter: blur(8px);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+    .wrap{max-width:980px; margin:0 auto}
+    .brand{
+      display:flex; gap:14px; align-items:center;
+    }
+    .logo{
+      width:44px; height:44px; border-radius:14px;
+      background: linear-gradient(135deg, rgba(122,162,255,.95), rgba(65,211,158,.75));
+      box-shadow: var(--shadow);
+      display:grid; place-items:center;
+      font-weight:800;
+      color:#081024;
+    }
+    h1{margin:0; font-size:26px; letter-spacing:.2px}
+    .meta{
+      margin-top:8px;
+      color:var(--muted);
+      font-size:14px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 18px;
+    }
+    .pill{
+      font-family:var(--mono);
+      font-size:12px;
+      color:var(--muted);
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      background: rgba(255,255,255,.04);
+    }
+    main{padding:28px 20px 80px}
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:18px;
+    }
+    @media (min-width: 900px){
+      .grid{grid-template-columns: 320px 1fr}
+      .toc{position:sticky; top:118px; align-self:start}
+    }
+    .card{
+      background: rgba(15,23,51,.78);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .hd{
+      padding:16px 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      display:flex; justify-content:space-between; align-items:center; gap:10px;
+    }
+    .card .bd{padding:18px}
+    .toc a{
+      display:block;
+      padding:10px 12px;
+      border-radius:12px;
+      color:var(--muted);
+      border:1px solid transparent;
+    }
+    .toc a:hover{
+      border-color: var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      text-decoration:none;
+    }
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--muted);
+      background: rgba(255,255,255,.04);
+    }
+    h2{margin:0 0 10px; font-size:18px}
+    h3{margin:18px 0 8px; font-size:15px; color:var(--text)}
+    p{margin:10px 0; color:var(--muted)}
+    ul{margin:10px 0 10px 20px; color:var(--muted)}
+    li{margin:6px 0}
+    .callout{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.035);
+      border-radius: 16px;
+      padding:14px 14px;
+      margin:12px 0;
+    }
+    .callout strong{color:var(--text)}
+    .price-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap:12px;
+      margin-top:10px;
+    }
+    @media (min-width:650px){
+      .price-grid{grid-template-columns: 1fr 1fr 1fr}
+    }
+    .plan{
+      border:1px solid var(--line);
+      border-radius: 16px;
+      padding:14px;
+      background: rgba(255,255,255,.03);
+    }
+    .plan .name{font-weight:700; color:var(--text); margin:0 0 6px}
+    .plan .price{
+      font-family:var(--mono);
+      font-size:18px;
+      margin:0 0 8px;
+      color: var(--text);
+    }
+    .plan .small{font-size:12px; color:var(--muted)}
+    code, pre{
+      font-family: var(--mono);
+      background: rgba(0,0,0,.25);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: #d9e2ff;
+    }
+    code{padding:2px 7px}
+    pre{padding:12px; overflow:auto}
+    .footer{
+      margin-top:26px;
+      padding-top:16px;
+      border-top:1px solid var(--line);
+      color:var(--muted);
+      font-size:13px;
+    }
+    .kpi{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:10px;
+    }
+    .kpi .chip{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      padding:8px 10px;
+      border-radius: 999px;
+      font-size:12px;
+      color:var(--muted);
+      font-family: var(--mono);
+    }
+    .hr{height:1px; background:var(--line); margin:16px 0}
+    .warn{color:var(--warn)}
+    .good{color:var(--good)}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">IP</div>
+        <div>
+          <h1>InstaInvoice Pro — Terms of Service</h1>
+          <div class="meta">
+            <span class="pill">Last updated: <span id="lastUpdated">2026-01-17</span></span>
+            <span class="pill">Platform: iOS (Apple App Store)</span>
+            <span class="pill">Applies to: InstaInvoice Pro subscriptions</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="grid">
+
+        <!-- TOC -->
+        <aside class="card toc">
+          <div class="hd">
+            <div><strong>Contents</strong></div>
+            <span class="badge">Quick Nav</span>
+          </div>
+          <div class="bd">
+            <a href="#acceptance">1. Acceptance</a>
+            <a href="#service">2. The Service</a>
+            <a href="#subscriptions">3. Subscriptions, Free Trial & Pricing</a>
+            <a href="#billing">4. Billing, Renewal & Cancellation</a>
+            <a href="#refunds">5. Refunds</a>
+            <a href="#appstore">6. Apple App Store Terms</a>
+            <a href="#user-content">7. User Content & Data</a>
+            <a href="#prohibited">8. Prohibited Use</a>
+            <a href="#disclaimer">9. Disclaimers</a>
+            <a href="#liability">10. Limitation of Liability</a>
+            <a href="#termination">11. Termination</a>
+            <a href="#changes">12. Changes</a>
+            <a href="#contact">13. Contact</a>
+          </div>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <section class="card">
+          <div class="hd">
+            <div><strong>Terms</strong></div>
+            <span class="badge">Readable + App Store-friendly</span>
+          </div>
+          <div class="bd">
+
+            <div class="callout">
+              <strong>Important:</strong> These Terms include details about auto-renewing subscriptions, the 7-day free trial,
+              cancellation rules, and where to request refunds. If anything here conflicts with Apple’s rules,
+              Apple’s rules control for App Store purchases.
+            </div>
+
+            <h2 id="acceptance">1. Acceptance</h2>
+            <p>
+              By downloading, accessing, or using <strong>InstalInvoice Pro</strong> (the “App”), you agree to these Terms of Service (“Terms”).
+              If you do not agree, do not use the App.
+            </p>
+
+            <h2 id="service">2. The Service</h2>
+            <p>
+              The App provides tools for creating and managing invoices and related business documents.
+              Features may change over time, and some features may require an active subscription.
+            </p>
+
+            <h2 id="subscriptions">3. Subscriptions, Free Trial & Pricing</h2>
+            <p>
+              InstalInvoice Pro offers auto-renewing subscriptions. Pricing may vary by region and may include taxes where applicable.
+              Your final price is shown in Apple’s purchase dialog before you confirm.
+            </p>
+
+            <div class="price-grid" aria-label="Subscription plans">
+              <div class="plan">
+                <p class="name">Free Trial</p>
+                <p class="price">7 days</p>
+                <p class="small">Trial converts to a paid subscription unless cancelled at least 24 hours before it ends.</p>
+              </div>
+              <div class="plan">
+                <p class="name">Pro — 6 Months</p>
+                <p class="price">$29.99 <span class="small">/ 6 months</span></p>
+                <p class="small">Auto-renews every 6 months unless cancelled.</p>
+              </div>
+              <div class="plan">
+                <p class="name">Pro — 12 Months</p>
+                <p class="price">$449.99 <span class="small">/ year</span></p>
+                <p class="small">Auto-renews every 12 months unless cancelled.</p>
+              </div>
+            </div>
+
+            <div class="kpi">
+              <span class="chip">Auto-renewable subscription</span>
+              <span class="chip">Manage in Apple ID settings</span>
+              <span class="chip">Cancel ≥24h before renewal</span>
+              <span class="chip">Prices shown in App Store at purchase</span>
+            </div>
+
+            <h3>What you get with Pro</h3>
+            <ul>
+              <li>Unlimited documents</li>
+              <li>Unlimited clients</li>
+              <li>No watermark</li>
+              <li>Access to all templates</li>
+              <li>Priority support (where offered)</li>
+            </ul>
+
+            <h2 id="billing">4. Billing, Renewal & Cancellation</h2>
+            <p>
+              Payment is charged to your Apple ID account at confirmation of purchase (or at the end of the free trial, if applicable).
+              Subscriptions renew automatically unless cancelled at least <strong>24 hours</strong> before the end of the current period.
+            </p>
+            <p>
+              You can manage or cancel your subscription in:
+              <strong>Settings → Apple ID → Subscriptions</strong> (on iPhone/iPad), or via the App Store account settings.
+            </p>
+            <div class="callout">
+              <strong class="warn">No partial period refunds via us:</strong> For App Store purchases, refunds are handled by Apple (see Section 5).
+            </div>
+
+            <h2 id="refunds">5. Refunds</h2>
+            <p>
+              Purchases made through the Apple App Store are generally handled by Apple. If you believe you are entitled to a refund,
+              request it through Apple’s refund process.
+            </p>
+            <ul>
+              <li>Open the Apple support flow for refunds and purchase issues.</li>
+              <li>Select the relevant transaction and follow Apple’s steps.</li>
+            </ul>
+            <p>
+              We do not have the ability to issue refunds for App Store purchases directly.
+            </p>
+
+            <h2 id="appstore">6. Apple App Store Terms</h2>
+            <p>
+              If you downloaded the App from the Apple App Store, you acknowledge that:
+            </p>
+            <ul>
+              <li>These Terms are between you and the developer, not Apple.</li>
+              <li>Apple has no obligation to provide support for the App.</li>
+              <li>Apple is not responsible for addressing any claims relating to the App, including product liability, legal compliance, or consumer protection claims.</li>
+              <li>Your use of the App must comply with Apple’s applicable terms and policies.</li>
+            </ul>
+
+            <h2 id="user-content">7. User Content & Data</h2>
+            <p>
+              You are responsible for the content you create in the App (e.g., invoices, client details).
+              You must ensure you have the right to store and process any personal data you input.
+            </p>
+            <p>
+              For privacy practices, see our <a href="https://someonedev32.github.io/instainvoicepro/privacypolicy.html">Privacy Policy</a>.
+            </p>
+
+            <h2 id="prohibited">8. Prohibited Use</h2>
+            <p>You agree not to:</p>
+            <ul>
+              <li>Use the App for illegal activity or to violate any laws (including tax or invoicing regulations applicable to you).</li>
+              <li>Reverse engineer, decompile, or attempt to extract source code except where permitted by law.</li>
+              <li>Interfere with or disrupt the App or its security.</li>
+              <li>Misrepresent your identity or business information in documents generated through the App.</li>
+            </ul>
+
+            <h2 id="disclaimer">9. Disclaimers</h2>
+            <p>
+              The App is provided <strong>“as is”</strong> and <strong>“as available”</strong>. We do not guarantee uninterrupted or error-free operation.
+              The App does not provide legal, tax, or accounting advice. You are responsible for compliance with laws and regulations applicable to your business.
+            </p>
+
+            <h2 id="liability">10. Limitation of Liability</h2>
+            <p>
+              To the maximum extent permitted by law, we are not liable for any indirect, incidental, special, consequential, or punitive damages,
+              or any loss of profits, data, or goodwill arising from your use of the App.
+            </p>
+
+            <h2 id="termination">11. Termination</h2>
+            <p>
+              We may suspend or terminate access to the App if you materially breach these Terms or if required by law.
+              You may stop using the App at any time. Active subscriptions must be cancelled through Apple.
+            </p>
+
+            <h2 id="changes">12. Changes</h2>
+            <p>
+              We may update these Terms from time to time. The “Last updated” date will change when we do.
+              Continued use of the App after updates means you accept the updated Terms.
+            </p>
+
+            <h2 id="contact">13. Contact</h2>
+            <p>
+              For support or questions about these Terms, contact:
+            </p>
+            <ul>
+              <li><strong>Support Email:</strong> <em>support@instainvoise.pro</em></li>
+              <li><strong>Developer/Business Name:</strong> <em>insta invoice pro</em></li>
+            </ul>
+
+            <div class="footer">
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Optional: auto-set today's date when you generate the file (remove if you want a fixed date)
+    // document.getElementById('lastUpdated').textContent = new Date().toISOString().slice(0,10);
+  </script>
+</body>
+</html>
