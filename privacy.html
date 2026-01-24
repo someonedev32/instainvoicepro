@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — BizInvoice</title>
+  <meta name="description" content="Privacy Policy for BizInvoice." />
+  <style>
+    :root{
+      --bg:#0b0f19;
+      --card:#0f1629;
+      --text:#e7ecff;
+      --muted:#a8b2d6;
+      --brand:#6aa7ff;
+      --border:rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:var(--sans);
+      background: radial-gradient(1200px 700px at 20% -10%, rgba(106,167,255,.25), transparent 55%),
+                  radial-gradient(900px 600px at 95% 0%, rgba(138,94,255,.18), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{
+      padding: 56px 20px 28px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .badge{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      padding: 10px 14px;
+      border:1px solid var(--border);
+      background: rgba(255,255,255,.03);
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .badge span.dot{
+      width:8px; height:8px;
+      border-radius: 999px;
+      background: var(--brand);
+      box-shadow: 0 0 0 6px rgba(106,167,255,.12);
+    }
+    h1{
+      margin:18px 0 10px;
+      font-size: 44px;
+      line-height:1.12;
+      letter-spacing:-0.02em;
+    }
+    .subtitle{
+      margin: 0;
+      color: var(--muted);
+      max-width: 72ch;
+      font-size: 16px;
+    }
+    main{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .card{
+      background: rgba(255,255,255,.03);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .inner{
+      padding: 22px 22px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+    @media (min-width: 920px){
+      main{grid-template-columns: 280px 1fr; align-items:start;}
+      .toc{position: sticky; top: 18px;}
+      .grid{grid-template-columns: 1fr 1fr;}
+    }
+    .toc h2{
+      margin:0 0 10px;
+      font-size:14px;
+      color: var(--muted);
+      letter-spacing:.08em;
+      text-transform: uppercase;
+    }
+    .toc a{
+      display:block;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border:1px solid transparent;
+      color: var(--text);
+    }
+    .toc a:hover{
+      background: rgba(106,167,255,.08);
+      border-color: rgba(106,167,255,.18);
+      text-decoration:none;
+    }
+    h2{
+      margin: 0 0 10px;
+      font-size: 22px;
+      letter-spacing:-0.01em;
+    }
+    h3{
+      margin: 16px 0 8px;
+      font-size: 16px;
+      color: var(--text);
+    }
+    p{margin: 0 0 12px; color: var(--muted)}
+    ul{margin: 0 0 12px 18px; color: var(--muted)}
+    li{margin: 6px 0}
+    code{
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 2px 6px;
+      border-radius: 10px;
+      background: rgba(255,255,255,.06);
+      border:1px solid var(--border);
+      color: var(--text);
+    }
+    .kv{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+    .kv .row{
+      padding: 10px 12px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,.12);
+    }
+    .kv .k{
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing:.08em;
+      margin-bottom: 4px;
+    }
+    .kv .v{
+      color: var(--text);
+      font-weight: 600;
+      word-break: break-word;
+    }
+    footer{
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px 50px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .hr{
+      height: 1px;
+      background: var(--border);
+      margin: 14px 0;
+    }
+    .notice{
+      padding: 12px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(106,167,255,.22);
+      background: rgba(106,167,255,.08);
+      color: var(--muted);
+      margin: 12px 0 0;
+    }
+    .pill{
+      display:inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 12px;
+      margin-right: 8px;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="badge"><span class="dot"></span> Privacy Policy</div>
+    <h1>Privacy Policy — BizInvoice</h1>
+    <p class="subtitle">
+      This Privacy Policy explains how <strong>BizInvoice</strong> ("we", "our", "us") collects, uses, and
+      shares information when you use <strong>BizInvoice</strong> (the "App").
+    </p>
+    <div class="notice">
+      <strong>Effective date:</strong> <span id="effective">EFFECTIVE_DATE</span>
+      &nbsp;•&nbsp; Contact: <a href="mailto:info@instaserver.net">info@instaserver.net</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Table of contents -->
+    <aside class="card toc">
+      <div class="inner">
+        <h2>Contents</h2>
+        <a href="#summary">1. Quick Summary</a>
+        <a href="#data-we-collect">2. Data We Collect</a>
+        <a href="#how-we-use">3. How We Use Data</a>
+        <a href="#sharing">4. Sharing & Third Parties</a>
+        <a href="#subscriptions">5. Subscriptions & Payments</a>
+        <a href="#retention">6. Data Retention</a>
+        <a href="#security">7. Security</a>
+        <a href="#your-rights">8. Your Rights</a>
+        <a href="#children">9. Children’s Privacy</a>
+        <a href="#changes">10. Changes</a>
+        <a href="#contact">11. Contact</a>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <section class="card">
+      <div class="inner">
+        <section id="summary">
+          <h2>1) Quick Summary</h2>
+          <p>
+            We designed BizInvoice to work with minimal data. The App may process information needed to
+            provide core functionality (for example, managing subscription status).
+          </p>
+          <div class="grid">
+            <div>
+              <span class="pill">No ads tracking</span>
+              <span class="pill">No selling data</span>
+              <span class="pill">Subscriptions supported</span>
+              <span class="pill">RevenueCat used</span>
+            </div>
+            <div class="kv">
+              <div class="row">
+                <div class="k">Data sale</div>
+                <div class="v">We do not sell personal data.</div>
+              </div>
+              <div class="row">
+                <div class="k">Tracking (ATT)</div>
+                <div class="v">We do not use your data for cross-app tracking.</div>
+              </div>
+              <div class="row">
+                <div class="k">Payments</div>
+                <div class="v">Handled by Apple (In-App Purchases).</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="data-we-collect">
+          <h2>2) Data We Collect</h2>
+          <p>
+            The App may collect or process the following types of information, depending on features you use:
+          </p>
+
+          <h3>A. Identifiers</h3>
+          <ul>
+            <li><strong>App User ID</strong> (internal identifier used to manage subscription access and restore purchases).</li>
+            <li><strong>Device identifiers</strong> (may be used for fraud prevention and reliable purchase validation).</li>
+          </ul>
+
+          <h3>B. Purchase Information</h3>
+          <ul>
+            <li><strong>Purchase history</strong> and subscription status (e.g., active/expired) related to Apple In-App Purchases.</li>
+          </ul>
+
+          <h3>C. User Content (Optional / On-device)</h3>
+          <ul>
+            <li>
+              Invoices, line items, notes, and other content you create in the App may be stored locally on your device.
+              If you enable syncing features in the future, this policy will be updated accordingly.
+            </li>
+          </ul>
+
+          <p class="notice">
+            <strong>Important:</strong> We do not collect sensitive categories (e.g., health, precise location, contacts)
+            unless a feature explicitly requires it. If we add such a feature, we will update this policy.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="how-we-use">
+          <h2>3) How We Use Data</h2>
+          <p>We use collected information for the following purposes:</p>
+          <ul>
+            <li><strong>App functionality</strong>: to enable core features and maintain your subscription access.</li>
+            <li><strong>Purchase validation</strong>: to confirm purchases, handle refunds, and restore entitlements.</li>
+            <li><strong>Customer support</strong>: to respond to support requests (when you contact us).</li>
+            <li><strong>Security</strong>: to detect fraud or abuse and protect the App.</li>
+          </ul>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="sharing">
+          <h2>4) Sharing & Third Parties</h2>
+          <p>
+            We share data only as needed to operate the App and provide subscriptions. We do not sell your data.
+          </p>
+
+          <h3>Third-party services we use</h3>
+          <ul>
+            <li>
+              <strong>Apple App Store / StoreKit</strong> — processes payments and subscription management.
+            </li>
+            <li>
+              <strong>RevenueCat</strong> — helps manage subscription status and entitlements across devices.
+              RevenueCat may process identifiers and purchase information to provide this service.
+            </li>
+          </ul>
+
+          <p>
+            These providers process data under their own terms and privacy policies. We recommend reviewing them:
+            Apple and RevenueCat.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="subscriptions">
+          <h2>5) Subscriptions & Payments</h2>
+          <p>
+            Subscriptions are offered as auto-renewable subscriptions through Apple In-App Purchases. Billing,
+            renewals, cancellations, and refunds are handled by Apple.
+          </p>
+          <ul>
+            <li>You can manage or cancel subscriptions in your Apple ID settings.</li>
+            <li>Free trials (if offered) convert to paid subscriptions unless cancelled before the trial ends.</li>
+            <li>We may use RevenueCat to verify subscription status and unlock premium features.</li>
+          </ul>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="retention">
+          <h2>6) Data Retention</h2>
+          <p>
+            We retain data only as long as necessary to provide the App and comply with legal obligations.
+            Purchase-related records may be retained for accounting, fraud prevention, and support.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="security">
+          <h2>7) Security</h2>
+          <p>
+            We use reasonable administrative, technical, and physical safeguards designed to protect information.
+            However, no method of transmission or storage is 100% secure.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="your-rights">
+          <h2>8) Your Rights</h2>
+          <p>
+            Depending on your location, you may have rights to access, correct, delete, or restrict the use of
+            your personal data. To request help, contact us at
+            <a href="mailto:info@instaserver.net">info@instaserver.net</a>.
+          </p>
+          <p>
+            For subscription billing and refunds, you must use Apple’s subscription management tools.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="children">
+          <h2>9) Children’s Privacy</h2>
+          <p>
+            The App is not intended for children under 13 (or the minimum age required in your jurisdiction).
+            We do not knowingly collect personal information from children.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="changes">
+          <h2>10) Changes to this Policy</h2>
+          <p>
+            We may update this Privacy Policy from time to time. We will revise the “Effective date” above and,
+            when appropriate, provide additional notice.
+          </p>
+        </section>
+
+        <div class="hr"></div>
+
+        <section id="contact">
+          <h2>11) Contact</h2>
+          <p>
+            If you have questions about this Privacy Policy or our data practices, contact:
+          </p>
+          <ul>
+            <li><strong>Company:</strong> BizInvoice</li>
+            <li><strong>Email:</strong> <a href="mailto:info@instaserver.net">info@instaserver.net</a></li>
+            <li><strong>Website:</strong> <a href="WEBSITE_URL" target="_blank" rel="noopener">www.instaserver.net</a></li>
+          </ul>
+          <p class="notice">
+            If you are contacting us about subscriptions, include your Apple receipt/order details where possible
+            (do not send full credit card details—Apple handles payment info).
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="hr"></div>
+    <p>
+      © <span id="year"></span> BizInvoice. All rights reserved.
+    </p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
